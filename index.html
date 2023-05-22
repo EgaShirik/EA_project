@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./style.css">
+        <script defer src="./script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="modal_wr1">
+            <div id="modal1">
+                <button id="cross_btn1"><img src="./img/cross.svg" alt=""></button>
+                <h2>SUCCESS!</h2>
+                <p class="modal_inf">You have successfully subscribed to the email newsletter</p>
+                <button id="close_btn1">Close</button>
+            </div>
+            <div id="modal2">
+                <button id="cross_btn2"><img src="./img/cross.svg" alt=""></button>
+                <h2>FAIL!</h2>
+                <p class="modal_inf">Try again! Your email must contain letters a-z numbers 0-9 @email address domain</p>
+                <button id="close_btn2">Close</button>
+            </div>
+        </div>
+        <div class="main">
+            <img class="top_left" src="./img/Vector_left.png" alt="">
+            <div class="main_center">
+                <a href="./index.html"><img class="logo" src="./img/Group.svg" alt=""></a>
+                <h1>UNDER CONSTRUCTION</h1>
+                <p class="info">We're making lots of improvements and will be back soon</p>
+                <div id="timer"></div>
+                <div class="event">
+                    <p class="event_info">Check our event page when you wait:</p>
+                    <button class="btn"><a href="https://egorovagency.by/" class="btn_txt">Go to the event</a><img style="padding-top: 20px;" src="./img/Group 2135.png" alt=""></button>
+                </div>
+            </div>
+            <img class="top_right" src="./img/Vector_right.png" alt="">
+        </div>
+        
+        <div id="response"></div>
+        <div class="form_wr">
+            <form action="form.php" name="ourForm">
+                <input id="inp" class="input" type="email" placeholder="Enter your Email and get notified" required name="ourForm__inp">
+                <button id="send" type="submit" name="ourForm__btn">Send</button>
+            </form>
+        </div>
+        
+    </body>
+</html>
